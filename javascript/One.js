@@ -2,6 +2,13 @@
 
 // Part One of javascript
 
+// javascript => javascript is a high level object orient web rich multi paradigm programming language
+// web is run by single handed by javascript
+
+// multi paradigm
+// functional programming
+// object orient programming
+
 // single quotes vs double quotes vs template literal
 console.log("single quotes represents string");
 console.log("double quotes represents string");
@@ -13,7 +20,7 @@ console.log(`template literal can injects variables using dollar sign`);
 multi line comment
 */
 
-// rules to define variable names => done
+// rules to define variable names => read from pdf
 
 // variable declare and initialize
 let declareVariable; //declare
