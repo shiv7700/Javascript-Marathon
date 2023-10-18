@@ -161,7 +161,7 @@ console.log(otp.length);
 console.log(otp[0]);
 console.log(otp[1]);
 
-// math => math is a built in object
+// math => math is a built-in object for mathematics operation
 console.log(Math.E);
 console.log(Math.PI);
 console.log(Math.max(2, 4));
@@ -172,4 +172,78 @@ console.log(Math.random());
 console.log(Math.floor(Math.random() * 10)); // 0 to 10
 console.log(Math.floor(Math.random() * 10) + 1); //1 to 10
 
-// date =>
+// generate four digits random number
+function randomNumber() {
+  return Math.floor(Math.random() * 10);
+}
+
+console.log(
+  `random 4 digits are ${randomNumber()} ${randomNumber()} ${randomNumber()} ${randomNumber()}`
+);
+
+// date => date is a build-in object for date operation
+let now = new Date();
+let now2 = new Date("dec 22 2024");
+
+// set date time
+now.setDate(22);
+
+// month are zero based like array (jan = 0 , feb = 1 , ...)
+// days are also zero based (sunday = 0 , monday = 1 , ...)
+// javascript date are started from 1970
+
+console.log(new Date().getDate());
+console.log(new Date().getDay());
+console.log(new Date().getFullYear());
+console.log(new Date().getMonth());
+
+// advance loops
+
+// for of loop => mostly use for array,string,map etc
+const gs = ["gs1", "gs2", "gs3", "gs4"];
+for (let i of gs) {
+  console.log(i);
+}
+
+// for in loop => mainly use for object
+const server2 = {
+  server: "paraint",
+  port: 300,
+  isSsd: true,
+};
+for (let i in person) {
+  console.log(i);
+  console.log(person[i]);
+}
+
+// some object methods
+const person = {
+  fullName: "blame",
+  email: "blame@gmail.com",
+  job: "front-end",
+  Experience: 1,
+  fullStack: true,
+};
+const num = [10, 20, 30, 40, 50];
+
+// object.entries() => return an array of [key,value]
+console.log(Object.entries(person));
+console.log(Object.entries(num));
+
+// object.keys() => return array of keys
+console.log(Object.keys(person));
+console.log(Object.keys(num));
+
+// object.values() => return array of values
+console.log(Object.values(person));
+console.log(Object.values(num));
+
+// get index in for of loop
+for (let [i, j] of Object.entries(num)) {
+  console.log(i);
+  console.log(j);
+}
+
+/*
+catch you in next chapter
+*/
