@@ -60,7 +60,7 @@ let [o1, o2, ...end] = [...ques1, ...ques2];
 function app(...data) {
   console.log(data);
 }
-app([5, 4, 3, 2, 1]);
+app(5, 4, 3, 2, 1);
 
 // rest on object
 const data = {
