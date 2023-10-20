@@ -6,7 +6,7 @@
 // function => reuseable code of block
 
 // parameter => values function uses inside it
-// argument => values that are passed into function
+// argument => actual values that are passed into function
 
 function example(parameter1, parameter2) {
   console.log("parameters are values that are used by function for itself");

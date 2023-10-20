@@ -9,10 +9,16 @@
 // functional programming
 // object orient programming
 
+// ECMASCRIPT => standard version of javascript
+// es6 is the most important version of javascript
+// all modern features and biggest changes occur in es6 or es 2015
+
 // single quotes vs double quotes vs template literal
 console.log("single quotes represents string");
 console.log("double quotes represents string");
 console.log(`template literal can injects variables using dollar sign`);
+
+// comments are ignored by browser engine
 
 // single line comment
 
