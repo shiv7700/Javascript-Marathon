@@ -38,7 +38,7 @@ To get started, simply clone or download this repository to your local machine. 
 
 ## Feedback and Support
 
-If you have any feedback, suggestions, or come across any issues, please don't hesitate to [open an issue](link-to-issues) or [reach out to us directly](link-to-contact).
+If you have any feedback, suggestions, or come across any issues, please don't hesitate to open an issue or reach out to us directly.
 
 ## Embark on your learning journey with enthusiasm! 🚀🚀🚀
 
