@@ -102,6 +102,80 @@ console.log(JSON.parse(j2));
 
 // Advance function concept
 
+// default parameter
+// When the function is called with no arguments or undefined values for those parameters, the default values are used. If values are passed as arguments, the passed values will override the default values
+function advanceParameter(p1 = "default parameter", p2) {
+  console.log("if no argument is pass into function");
+  console.log("by default parameter takes undefined value");
+  console.log(`p1 have default parameter ${p1}`);
+  console.log(`p2 have no default parameter thats why it is ${p2}`);
+}
+
+advanceParameter();
+
+// high order function => a function which either return another function or takes other function as arguments are called as high order function
+
+//function return another function
+function cache() {
+  return () => console.log("return another function");
+}
+
+// function as argument
+function pass(wish, name) {
+  let greeting = wish(name);
+  console.log(greeting);
+}
+
+function greet(name) {
+  console.log(`hello ${name}`);
+}
+
+pass(greet, "blame");
+
+// first class function => functions are first class citizen which means they are treated like any other variable because of which we can do following things with functions
+// variable can store function
+// can be passed as arguments in function
+// return as value in function
+
+// map filter reduce
+
+// map => return new array and iterate over every value of array
+const arr1 = [10, 20, 30, 40, 50];
+let result = arr1.map((value) => value);
+console.log(result);
+
+// filter => return new array and works on condition
+let result2 = arr1.filter((value) => value >= 30);
+console.log(result2);
+
+// reduce => reduce array to a single value
+let result3 = arr1.reduce((total, currentValue) => total + currentValue, 0);
+
+// Immediately Invoked Function Expressions (IIFE) => iife executed immediately after creation
+// syntax => ()();
+(function () {
+  console.log("connecting to db");
+})();
+
+// callback function => when a function is passed as argument to another function
+// callback function enables asynchronous programming
+
+// Lexical Scoping => visibility and accessibility of variables within a particular context of code
+
+// Closure => When a function is defined inside another function, the inner function forms a closure with the outer function's variables. This means that the inner function has access to the outer function's variables, even after the outer function has completed execution.
+
+function outer() {
+  let a = "closure are advance topic";
+
+  function inner() {
+    console.log(a);
+  }
+
+  return inner;
+}
+
+const closure = outer();
+
 /*
 catch you in next chapter
 */
